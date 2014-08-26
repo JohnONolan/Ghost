@@ -108,7 +108,7 @@ CasperTest.begin('General settings pane is correct', 8, function suite(test) {
 });
 
 //// ## General settings validations tests
-CasperTest.begin('General settings validation is correct', 7, function suite(test) {
+CasperTest.begin('General settings validation is correct', 6, function suite(test) {
     casper.thenOpenAndWaitForPageLoad('settings.general', function testTitleAndUrl() {
         test.assertTitle('Ghost Admin', 'Ghost admin has no title');
         test.assertUrlMatch(/ghost\/settings\/general\/$/, 'Landed on the correct URL');
@@ -136,36 +136,22 @@ CasperTest.begin('General settings validation is correct', 7, function suite(tes
 
     casper.thenClick('.js-bb-notification .close');
 
-    // Ensure postsPerPage number field form validation
+    // Check postsPerPage autocorrect   
     casper.fillAndSave('form#settings-general', {
         'general[postsPerPage]': 'notaninteger'
     });
 
-    casper.waitForSelectorTextChange('.notification-error', function onSuccess() {
-        test.assertSelectorHasText('.notification-error', 'be a number');
-    }, casper.failOnTimeout(test, 'postsPerPage error did not appear'), 2000);
+    casper.then(function checkSlugInputValue() {
+        test.assertField('general[postsPerPage]', '5');
+    });
 
-    casper.thenClick('.js-bb-notification .close');
-
-    // Ensure postsPerPage max of 1000
     casper.fillAndSave('form#settings-general', {
         'general[postsPerPage]': '1001'
     });
 
-    casper.waitForSelectorTextChange('.notification-error', function onSuccess() {
-        test.assertSelectorHasText('.notification-error', 'maximum number of posts per page is 1000');
-    }, casper.failOnTimeout(test, 'postsPerPage max error did not appear', 2000));
-
-    casper.thenClick('.js-bb-notification .close');
-
-    // Ensure postsPerPage min of 0
-    casper.fillAndSave('form#settings-general', {
-        'general[postsPerPage]': '-1'
+    casper.then(function checkSlugInputValue() {
+        test.assertField('general[postsPerPage]', '5');
     });
-
-    casper.waitForSelectorTextChange('.notification-error', function onSuccess() {
-        test.assertSelectorHasText('.notification-error', 'minimum number of posts per page is 1');
-    }, casper.failOnTimeout(test, 'postsPerPage min error did not appear', 2000));
 });
 
 CasperTest.begin('Users screen is correct', 9, function suite(test) {
@@ -299,7 +285,7 @@ CasperTest.begin('User settings screen resets all whitespace slug to original va
         }, false);
     });
 
-    casper.thenClick('.content.settings-user');
+    casper.thenClick('body');
 
     casper.then(function checkSlugInputValue() {
         casper.wait(250);
@@ -323,7 +309,7 @@ CasperTest.begin('User settings screen change slug handles duplicate slug', 4, f
         }, false);
     });
 
-    casper.thenClick('.content.settings-user');
+    casper.thenClick('body');
 
     casper.waitForResource(/\/slugs\/user\//, function testGoodResponse(resource) {
         test.assert(400 > resource.status);
@@ -408,11 +394,11 @@ CasperTest.begin('Ensure user bio field length validation', 3, function suite(te
        test.assertUrlMatch(/ghost\/settings\/users\/test-user\/$/, 'Ghost doesn\'t require login this time');
    });
 
-   casper.waitForSelector('.settings-content .settings-user', function then() {
+   casper.then(function setBioToInvalid() {
        this.fillSelectors('form.user-profile', {
            '#user-bio': new Array(202).join('a')
        });
-   }, casper.failOnTimeout(test, 'waitForSelector .settings-content .settings-user timed out'));
+   });
 
    casper.thenClick('.page-actions .btn-blue');
 
@@ -427,11 +413,11 @@ CasperTest.begin('Ensure user url field validation', 3, function suite(test) {
        test.assertUrlMatch(/ghost\/settings\/users\/test-user\/$/, 'Ghost doesn\'t require login this time');
    });
 
-   casper.waitForSelector('.settings-content .settings-user', function then() {
+    casper.then(function setWebsiteToInvalid() {
        this.fillSelectors('form.user-profile', {
            '#user-website': 'notaurl'
        });
-   }, casper.failOnTimeout(test, 'waitForSelector .settings-content .settings-user timed out'));
+   });
 
    casper.thenClick('.page-actions .btn-blue');
 
@@ -446,11 +432,11 @@ CasperTest.begin('Ensure user location field length validation', 3, function sui
        test.assertUrlMatch(/ghost\/settings\/users\/test-user\/$/, 'Ghost doesn\'t require login this time');
    });
 
-   casper.waitForSelector('.settings-content .settings-user', function then() {
+   casper.then(function setLocationToInvalid() {
        this.fillSelectors('form.user-profile', {
            '#user-location': new Array(1002).join('a')
        });
-   }, casper.failOnTimeout(test, 'waitForSelector .settings-content .settings-user timed out'));
+   });
 
    casper.thenClick('.page-actions .btn-blue');
 
