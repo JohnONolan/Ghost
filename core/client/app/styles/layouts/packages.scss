@@ -1,0 +1,231 @@
+// ------------------------------------------------------------
+// Packages: Themes / Apps
+// ------------------------------------------------------------
+
+.package-filter {
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    @media (max-width: 1460px) {
+        max-width: 700px;
+    }
+}
+
+
+//
+// Main Layout
+// --------------------------------------------------
+
+.package-grid {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: space-between;
+    //max-width: 1200px;
+    margin: 0 -10px 4vw -10px;
+}
+
+
+//
+// Package Card
+// --------------------------------------------------
+
+.package-card-app {
+    flex: 1 1 500px;
+    max-width: 700px;
+    margin: 10px;
+    padding: 20px;
+    border: rgba(0,0,0,0.1) 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background 0.5s ease;
+
+    &:hover {
+        cursor: pointer;
+        background: rgba(0,20,60,0.03);
+        transition: background 0.1s ease;
+    }
+}
+
+.package-card-content {
+    display: flex;
+}
+
+.package-card-app-icon {
+    flex: 0 0 60px;
+    margin: 0 15px 0 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 15%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.package-card-meta {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.package-card-app-title {
+    margin: 0 0 4px 0;
+    padding: 0 70px 0 0;
+    font-size: 1.9rem;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.package-card-stats {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -3px;
+    right: 0;
+}
+
+.package-downloads {
+    height: 26px;
+    display: inline-block;
+    border: transparent 1px solid;
+    font-size: 13px;
+    line-height: 24px;
+    vertical-align: top;
+    color: $midgrey;
+
+    &:hover {
+        cursor: default;
+    }
+
+    i:before {
+        font-size: 15px;
+        vertical-align: -10%;
+    }
+}
+
+.package-download-count {
+    font-size: 13px;
+}
+
+.package-card-app-desc {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    line-height: 1.3em;
+    color: $midgrey;
+    font-weight: 200;
+
+    //limit to 1line
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 4.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    @media (min-width: 600px) and (max-width: 1460px) {
+        padding-right: 80px;
+    }
+}
+
+
+//
+// Package Card Footer
+// --------------------------------------------------
+
+.package-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 13px;
+
+    @media (max-width: 540px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .package-developer { display: none; }
+    }
+}
+
+.package-developer {
+    display: flex;
+    align-items: center;
+    color: $midgrey;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.package-developer img {
+    flex-shrink: 0;
+    height: 20px;
+    width: 20px;
+    margin-right: 6px;
+    border-radius: 100%;
+}
+
+.package-developer-name {
+    font-size: 1.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.package-controls {
+    display: flex;
+    flex-shrink: 0;
+    border: rgba(0,0,0,0.1) 1px solid;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.package-controls-button {
+    display: flex;
+    align-items: center;
+    padding: 7px 12px;
+    border-left: rgba(0,0,0,0.1) 1px solid;
+    font-size: 1.3rem;
+    line-height: 1;
+    color: lighten($midgrey, 0%);
+    background: #fff;
+
+    &:first-child {
+        border: none;
+    }
+
+    &:hover {
+        color: $darkgrey;
+    }
+
+    i:before {
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        font-size: 12px;
+        vertical-align: -3%;
+    }
+}
+
+.package-disable {
+    border-right: $green 3px solid;
+}
+
+.package-enable {
+    border-right: $red 3px solid;
+}
+
+
+//
+// Media Queries
+// --------------------------------------------------
+
+@media (max-width: 600px) {
+    .package-grid {
+        margin: 0 -5px 4vw -5px;
+    }
+    .package-card-app {
+        margin: 5px;
+    }
+}

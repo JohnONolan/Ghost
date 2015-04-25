@@ -174,6 +174,9 @@ $i-weather-rain:        \f637;
 $i-weather-snow:        \f63a;
 $i-weather-sun:         \f638;
 $i-x:                   \f634;
+$i-play:                \e600;
+$i-pause:               \e601;
+$i-download:            \e602;
 
 
 //
@@ -401,6 +404,15 @@ $i-x:                   \f634;
 }
 .icon-x:before {
     content: '#{$i-x}';
+}
+.icon-play:before {
+    content: '#{$i-play}';
+}
+.icon-pause:before {
+    content: '#{$i-pause}';
+}
+.icon-download:before {
+    content: '#{$i-download}';
 }
 
 // Specific icon size adjustments

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Apps</title>
+    <link rel="stylesheet" href="../../../built/assets/ghost.css">
+
+    <!-- Styles not needed for this. Just to get around various bits that Ember handles for us. -->
+    <style>
+        @media (max-width: 900px) {
+            .settings-nav {
+                top: 0;
+                left: -100%;
+            }
+            .settings-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="ember-application settings settings-view-general" data-apps="false" data-filestorage="true" data-blogurl="http://127.0.0.1:2368">
+
+    <div id="container"><a class="sr-only sr-only-focusable" href="#gh-main">Skip to main content</a>
+
+        <nav class="global-nav" role="navigation">
+
+            <a class="nav-item ghost-logo" href="/" title="/">
+                <div class="nav-label"><i class="icon-ghost"></i>
+                    <span>Visit blog</span>
+                </div>
+            </a>
+
+            <a class="nav-item nav-content js-nav-item" href="/ghost/">
+                <div class="nav-label"><i class="icon-content"></i> Content</div>
+            </a>
+
+            <a class="nav-item nav-new js-nav-item" href="/ghost/editor/">
+                <div class="nav-label"><i class="icon-add"></i> New Post</div>
+            </a>
+
+
+            <a class="nav-item nav-settings js-nav-item active" href="/ghost/settings/">
+                <div class="nav-label"><i class="icon-settings2"></i> Settings</div>
+            </a>
+
+
+
+
+            <div class="nav-item user-menu" data-href="#">
+                <div class=" nav-label">
+                    <div class="image">
+                        <img src="../../../core/shared/img/user-image.png" alt="Paul Davis's profile picture">
+                    </div>
+                    <div class="name">
+                        Paul Davis <i class="icon-chevron-down"></i>
+                        <small>Profile &amp; Settings</small>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="nav-cover js-nav-cover"></div>
+
+        <main id="gh-main" class="viewport" role="main" data-notification-count="0" data-bindattr-448="448">
+            <aside class="notifications top">
+            </aside>
+            <aside class="notifications bottom">
+            </aside>
+            <div>
+                <header class="page-header">
+                    <button class="menu-button js-menu-button" data-ember-action="1221">
+                        <span class="sr-only">Menu</span>
+                    </button>
+                    <h2 class="page-title">Settings</h2>
+                </header>
+
+                <div class="page-content">
+                    <nav class="settings-nav js-settings-nav">
+                        <ul>
+                            <li class="settings-nav-general icon-settings active"><a class="active" href="/ghost/settings/general/">Apps</a>
+                            </li>
+                            <li class="settings-nav-users icon-users"><a href="/ghost/settings/users/">Users</a>
+                            </li>
+                            <li class="settings-nav-about icon-pacman"><a href="/ghost/settings/about/">About</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <section class="settings-content js-settings-content fade-in">
+
+                        <header class="settings-view-header">
+                            <a class="btn btn-default btn-back active" href="/ghost/settings/">Back</a>
+                            <h2 class="page-title">Installed Apps</h2>
+                        </header>
+
+                        <section class="content settings-general">
+
+                            <input id="blog-title" class="package-filter" type="text" name="general[title]" placeholder="Filter apps by name">
+
+                            <div class="package-grid">
+
+                            <article class="package-card-app" data-href="/app/">
+                                <div class="package-card-content">
+                                    <figure class="package-card-app-icon" style="background-image:url(https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg)"></figure>
+                                    <div class="package-card-meta">
+                                        <h3 class="package-card-app-title">Ghost</h3>
+                                        <div class="package-card-stats">
+                                            <div class="package-downloads">
+                                                <i class="icon-download"></i>
+                                                <span class="package-download-count">14,301</span>
+                                            </div>
+                                        </div>
+                                        <p class="package-card-app-desc">A UI theme that offers endless possibilities: one Atom, many Isotopes ;) Isotope adapts to match any syntax theme.</p>
+                                    </div>
+                                </div>
+                                <footer class="package-card-footer">
+                                    <a class="package-developer" href="#" target="_blank">
+                                        <img src="https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg" alt="developer" />
+                                        <span class="package-developer-name">GhostFoundation1</span>
+                                    </a>
+                                    <div class="package-controls">
+                                        <a class="package-settings package-controls-button" href="#"><i class="icon-settings"></i>Settings</a>
+                                        <a class="package-uninstall package-controls-button" href="#"><i class="icon-trash"></i>Uninstall</a>
+                                        <a class="package-disable package-controls-button" href="#"><i class="icon-pause"></i>Disable</a>
+                                    </div>
+                                </footer>
+                            </article>
+
+                            <article class="package-card-app" data-href="/app/">
+                                <div class="package-card-content">
+                                    <figure class="package-card-app-icon" style="background-image:url(https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg)"></figure>
+                                    <div class="package-card-meta">
+                                        <h3 class="package-card-app-title">Ghost</h3>
+                                        <div class="package-card-stats">
+                                            <div class="package-downloads">
+                                                <i class="icon-download"></i>
+                                                <span class="package-download-count">14,301</span>
+                                            </div>
+                                        </div>
+                                        <p class="package-card-app-desc">A UI theme that offers endless possibilities: one Atom, many Isotopes ;) Isotope adapts to match any syntax theme.</p>
+                                    </div>
+                                </div>
+                                <footer class="package-card-footer">
+                                    <a class="package-developer" href="#" target="_blank">
+                                        <img src="https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg" alt="developer" />
+                                        <span class="package-developer-name">GhostFoundation1</span>
+                                    </a>
+                                    <div class="package-controls">
+                                        <a class="package-settings package-controls-button" href="#"><i class="icon-settings"></i>Settings</a>
+                                        <a class="package-uninstall package-controls-button" href="#"><i class="icon-trash"></i>Uninstall</a>
+                                        <a class="package-enable package-controls-button" href="#"><i class="icon-play"></i>Enable</a>
+                                    </div>
+                                </footer>
+                            </article>
+
+                            <article class="package-card-app" data-href="/app/">
+                                <div class="package-card-content">
+                                    <figure class="package-card-app-icon" style="background-image:url(https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg)"></figure>
+                                    <div class="package-card-meta">
+                                        <h3 class="package-card-app-title">Ghost</h3>
+                                        <div class="package-card-stats">
+                                            <div class="package-downloads">
+                                                <i class="icon-download"></i>
+                                                <span class="package-download-count">14,301</span>
+                                            </div>
+                                        </div>
+                                        <p class="package-card-app-desc">A UI theme that offers endless possibilities: one Atom, many Isotopes ;) Isotope adapts to match any syntax theme.</p>
+                                    </div>
+                                </div>
+                                <footer class="package-card-footer">
+                                    <a class="package-developer" href="#" target="_blank">
+                                        <img src="https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg" alt="developer" />
+                                        <span class="package-developer-name">GhostFoundation1</span>
+                                    </a>
+                                    <div class="package-controls">
+                                        <a class="package-settings package-controls-button" href="#"><i class="icon-settings"></i>Settings</a>
+                                        <a class="package-uninstall package-controls-button" href="#"><i class="icon-trash"></i>Uninstall</a>
+                                        <a class="package-disable package-controls-button" href="#"><i class="icon-pause"></i>Disable</a>
+                                    </div>
+                                </footer>
+                            </article>
+
+                            <article class="package-card-app" data-href="/app/">
+                                <div class="package-card-content">
+                                    <figure class="package-card-app-icon" style="background-image:url(https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg)"></figure>
+                                    <div class="package-card-meta">
+                                        <h3 class="package-card-app-title">Ghost</h3>
+                                        <div class="package-card-stats">
+                                            <div class="package-downloads">
+                                                <i class="icon-download"></i>
+                                                <span class="package-download-count">14,301</span>
+                                            </div>
+                                        </div>
+                                        <p class="package-card-app-desc">A UI theme that offers endless possibilities: one Atom, many Isotopes ;) Isotope adapts to match any syntax theme.</p>
+                                    </div>
+                                </div>
+                                <footer class="package-card-footer">
+                                    <a class="package-developer" href="#" target="_blank">
+                                        <img src="https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg" alt="developer" />
+                                        <span class="package-developer-name">GhostFoundation1</span>
+                                    </a>
+                                    <div class="package-controls">
+                                        <a class="package-settings package-controls-button" href="#"><i class="icon-settings"></i>Settings</a>
+                                        <a class="package-uninstall package-controls-button" href="#"><i class="icon-trash"></i>Uninstall</a>
+                                        <a class="package-disable package-controls-button" href="#"><i class="icon-pause"></i>Disable</a>
+                                    </div>
+                                </footer>
+                            </article>
+
+                            <article class="package-card-app" data-href="/app/">
+                                <div class="package-card-content">
+                                    <figure class="package-card-app-icon" style="background-image:url(https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg)"></figure>
+                                    <div class="package-card-meta">
+                                        <h3 class="package-card-app-title">Ghost</h3>
+                                        <div class="package-card-stats">
+                                            <div class="package-downloads">
+                                                <i class="icon-download"></i>
+                                                <span class="package-download-count">14,301</span>
+                                            </div>
+                                        </div>
+                                        <p class="package-card-app-desc">A UI theme that offers endless possibilities: one Atom, many Isotopes ;) Isotope adapts to match any syntax theme.</p>
+                                    </div>
+                                </div>
+                                <footer class="package-card-footer">
+                                    <a class="package-developer" href="#" target="_blank">
+                                        <img src="https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg" alt="developer" />
+                                        <span class="package-developer-name">GhostFoundation1</span>
+                                    </a>
+                                    <div class="package-controls">
+                                        <a class="package-settings package-controls-button" href="#"><i class="icon-settings"></i>Settings</a>
+                                        <a class="package-uninstall package-controls-button" href="#"><i class="icon-trash"></i>Uninstall</a>
+                                        <a class="package-disable package-controls-button" href="#"><i class="icon-pause"></i>Disable</a>
+                                    </div>
+                                </footer>
+                            </article>
+
+                            <article class="package-card-app" data-href="/app/">
+                                <div class="package-card-content">
+                                    <figure class="package-card-app-icon" style="background-image:url(https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg)"></figure>
+                                    <div class="package-card-meta">
+                                        <h3 class="package-card-app-title">Ghost</h3>
+                                        <div class="package-card-stats">
+                                            <div class="package-downloads">
+                                                <i class="icon-download"></i>
+                                                <span class="package-download-count">14,301</span>
+                                            </div>
+                                        </div>
+                                        <p class="package-card-app-desc">A UI theme that offers endless possibilities: one Atom, many Isotopes ;) Isotope adapts to match any syntax theme.</p>
+                                    </div>
+                                </div>
+                                <footer class="package-card-footer">
+                                    <a class="package-developer" href="#" target="_blank">
+                                        <img src="https://pbs.twimg.com/profile_images/439941058404028416/3nRmjK6v.jpeg" alt="developer" />
+                                        <span class="package-developer-name">GhostFoundation1</span>
+                                    </a>
+                                    <div class="package-controls">
+                                        <a class="package-settings package-controls-button" href="#"><i class="icon-settings"></i>Settings</a>
+                                        <a class="package-uninstall package-controls-button" href="#"><i class="icon-trash"></i>Uninstall</a>
+                                        <a class="package-disable package-controls-button" href="#"><i class="icon-pause"></i>Disable</a>
+                                    </div>
+                                </footer>
+                            </article>
+                            </div>
+
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
