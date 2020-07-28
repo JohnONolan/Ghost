@@ -68,12 +68,9 @@ $ ghost install
 
 Check out our [official documentation](https://ghost.org/docs/) for more information about our [recommended hosting stack](https://ghost.org/docs/concepts/hosting/) & properly [upgrading Ghost](https://ghost.org/faq/upgrade-to-ghost-2-0/), plus everything you need to develop your own Ghost [themes](https://ghost.org/docs/api/handlebars-themes/) or work with [our API](https://ghost.org/docs/api/).
 
-&nbsp;
-
 ### Contributors & Advanced Developers
 
-For anyone wishing to contribute to Ghost or to hack/customise core files we recommend following our full development setup guides: 
-[General Contributor Guide](https://ghost.org/docs/concepts/contributing/) | [Developer Setup](https://ghost.org/docs/install/source/) | [Admin Client Dev Guide](https://ghost.org/docs/install/source/#ghost-admin)
+For anyone wishing to contribute to Ghost or to hack/customise core files we recommend following our full development setup guides: [Contributor Guide](https://ghost.org/docs/concepts/contributing/) | [Developer Setup](https://ghost.org/docs/install/source/) | [Admin Client Dev Guide](https://ghost.org/docs/install/source/#ghost-admin)
 
 &nbsp;
 
