@@ -70,14 +70,6 @@ Check out our [official documentation](https://ghost.org/docs/) for more informa
 
 &nbsp;
 
-# Ghost Sponsors
-
-A big thanks to all our [GitHub Sponsors](https://github.com/sponsors/TryGhost) :heart: who make Ghost possible, in particular:
-
-**[DigitalOcean](https://digitalocean.com)** | **[Cloudflare](https://cloudflare.com)** | **[Foo](https://www.foo.software)**
-
-&nbsp;
-
 
 # Getting Help
 
@@ -94,6 +86,13 @@ For anyone wishing to contribute to Ghost or to hack/customise core files we rec
 
 &nbsp;
 
+# Ghost Sponsors
+
+A big thanks to all our [GitHub Sponsors](https://github.com/sponsors/TryGhost) :heart: who make Ghost possible, in particular:
+
+**[DigitalOcean](https://digitalocean.com)** | **[Cloudflare](https://cloudflare.com)** | **[Foo](https://www.foo.software)**
+
+&nbsp;
 
 # Copyright & License
 
