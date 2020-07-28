@@ -74,19 +74,19 @@ For anyone wishing to contribute to Ghost or to hack/customise core files we rec
 
 &nbsp;
 
+# Ghost Sponsors
+
+We'd like to extend big thanks to our sponsors and partners who make Ghost possible. Without their generosity, Ghost would be nowhere near as good as it is today. If you're interested in sponsoring Ghost and supporting the project, please check out our profile on [GitHub Sponsors](https://github.com/sponsors/TryGhost) :heart:
+
+**[DigitalOcean](https://digitalocean.com)** | **[Cloudflare](https://cloudflare.com)** | **[Foo](https://www.foo.software)**
+
+&nbsp;
+
 # Getting Help
 
 You can find answers to a huge variety of questions, along with a large community of helpful developers over on the [Ghost forum](https://forum.ghost.org/) - replies are generally very quick. **Ghost(Pro)** customers also have access to 24/7 email support.
 
 To stay up to date with all the latest news and product updates, make sure you [subscribe to our blog](https://ghost.org/blog/) — or you can always follow us [on Twitter](https://twitter.com/Ghost), if you prefer your updates bite-sized and facetious. :saxophone::turtle:
-
-&nbsp;
-
-# Ghost Sponsors
-
-A big thanks to all our [GitHub Sponsors](https://github.com/sponsors/TryGhost) :heart: who make Ghost possible, in particular:
-
-**[DigitalOcean](https://digitalocean.com)** | **[Cloudflare](https://cloudflare.com)** | **[Foo](https://www.foo.software)**
 
 &nbsp;
 
