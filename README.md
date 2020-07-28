@@ -32,11 +32,18 @@
 
 <a href="https://ghost.org/pricing"><img src="https://user-images.githubusercontent.com/120485/43995179-556d7620-9da1-11e8-8410-4b2ba48ea8d0.png" alt="Ghost(Pro)" width="165px" /></a>
 
-The easiest way to deploy Ghost is with our official **[Ghost(Pro)](https://ghost.org/pricing/)** managed service. You can have a fresh instance up and running in a couple of clicks with a worldwide CDN, backups, security and maintenance all done for you.
+The easiest way to get a production instance deployed is with our official **[Ghost(Pro)](https://ghost.org/pricing/)** managed service. It takes aboue 2 minutes to deploy a new site with worldwide CDN, backups, security and maintenance all done for you. For most people this ends up being the best value option cause of [how much time it saves](https://ghost.org/docs/concepts/hosting/), and 100% of revenue goes to the Ghost Foundation; funding the maintenance and further development of the project itself. So you’ll be supporting open source software *and* getting a great service!
 
-Not only will it save you hours of maintenance per month, but all revenue goes to the Ghost Foundation, which funds the maintenance and further development of Ghost itself. So you’ll be supporting open source software *and* getting a great service! Alternatively if you'd like to support us, we're very grateful to all our [GitHub Sponsors](https://github.com/sponsors/TryGhost) :heart:
+If you prefer to run on your own infrastructure, we also offer official 1-off installs and managed support and maintenance plans via **[Ghost(Valet)](https://valet.ghost.org)** - which can save a substantial amount of developer time and resources.
 
-If you prefer to run on your own infrastructure, we also provide 1-off installs and managed support and maintenance plans via **[Ghost(Valet)](https://valet.ghost.org)** - which can save a substantial amount of developer time and resources.
+&nbsp;
+
+## Ghost Sponsors
+
+A big thanks to all our [GitHub Sponsors](https://github.com/sponsors/TryGhost) :heart: who make Ghost possible, in particular:
+
+**[DigitalOcean](https://digitalocean.com)** | **[Cloudflare](https://cloudflare.com)** | **[Foo](https://www.foo.software)**
+
 
 &nbsp;
 
