@@ -40,14 +40,6 @@ If you prefer to run on your own infrastructure, we also offer official 1-off in
 
 &nbsp;
 
-# Ghost Sponsors
-
-A big thanks to all our [GitHub Sponsors](https://github.com/sponsors/TryGhost) :heart: who make Ghost possible, in particular:
-
-**[DigitalOcean](https://digitalocean.com)** | **[Cloudflare](https://cloudflare.com)** | **[Foo](https://www.foo.software)**
-
-&nbsp;
-
 # Quickstart Install
 
 If you want to run your own instance of Ghost, in most cases the best way is to use our **CLI tool**
@@ -75,6 +67,14 @@ $ ghost install
 &nbsp;
 
 Check out our [official documentation](https://ghost.org/docs/) for more information about our [recommended hosting stack](https://ghost.org/docs/concepts/hosting/) & properly [upgrading Ghost](https://ghost.org/faq/upgrade-to-ghost-2-0/), plus everything you need to develop your own Ghost [themes](https://ghost.org/docs/api/handlebars-themes/) or work with [our API](https://ghost.org/docs/api/).
+
+&nbsp;
+
+# Ghost Sponsors
+
+A big thanks to all our [GitHub Sponsors](https://github.com/sponsors/TryGhost) :heart: who make Ghost possible, in particular:
+
+**[DigitalOcean](https://digitalocean.com)** | **[Cloudflare](https://cloudflare.com)** | **[Foo](https://www.foo.software)**
 
 &nbsp;
 
