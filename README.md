@@ -76,7 +76,7 @@ For anyone wishing to contribute to Ghost or to hack/customise core files we rec
 
 # Ghost Sponsors
 
-We'd like to extend big thanks to our sponsors and partners who make Ghost possible. Without their generosity, Ghost would be nowhere near as good as it is today. If you're interested in sponsoring Ghost and supporting the project, please check out our profile on [GitHub Sponsors](https://github.com/sponsors/TryGhost) :heart:
+We'd like to extend big thanks to our sponsors and partners who make Ghost possible. If you're interested in sponsoring Ghost and supporting the project, please check out our profile on [GitHub Sponsors](https://github.com/sponsors/TryGhost) :heart:
 
 **[DigitalOcean](https://digitalocean.com)** | **[Cloudflare](https://cloudflare.com)** | **[Foo](https://www.foo.software)**
 
