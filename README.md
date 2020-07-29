@@ -26,6 +26,8 @@
     </a>
 </p>
 
+<small>Love open source? We're currently looking for <a href="https://careers.ghost.org/product-engineer-node-js/">Node.js Engineers</a> to work on Ghost full-time</small>
+
 &nbsp;
 
 <a href="https://ghost.org"><img src="https://user-images.githubusercontent.com/120485/66918181-f88fdc80-f048-11e9-8135-d9c0e7b35ebc.png" alt="Fiercely independent, professional publishing. Ghost is the most popular open source, headless Node.js CMS which already works with all the tools you know and love." /></a>
