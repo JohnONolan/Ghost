@@ -26,7 +26,7 @@
     </a>
 </p>
 
-<small>Love open source? We're currently looking for <a href="https://careers.ghost.org/product-engineer-node-js/">Node.js Engineers</a> to work on Ghost full-time</small>
+<p align="center"><small>Love open source? We're currently looking for <a href="https://careers.ghost.org/product-engineer-node-js/">Node.js Engineers</a> to work on Ghost full-time</small></p>
 
 &nbsp;
 
