@@ -26,8 +26,7 @@
     </a>
 </p>
 
-<p align="center">
-    <svg fill="none" viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
@@ -58,9 +57,8 @@ h1 {
   </foreignObject>
 </svg>
     
-    <svg><small style="font-size: 1.4px">Love open source? We're hiring for <a href="https://careers.ghost.org/product-engineer-node-js/">Node.js Engineers</a> to work on Ghost full-time</small></svg>
+<svg><small style="font-size: 1.4px">Love open source? We're hiring for <a href="https://careers.ghost.org/product-engineer-node-js/">Node.js Engineers</a> to work on Ghost full-time</small></svg>
 
-</p>
 
 &nbsp;
 
