@@ -26,7 +26,7 @@
     </a>
 </p>
 
-<p align="center"><small>Love open source? We're hiring for <a href="https://careers.ghost.org/product-engineer-node-js/">Node.js Engineers</a> to work on Ghost full-time</small></p>
+<p align="center" opacity="0.5">Love open source? We're hiring for <a href="https://careers.ghost.org/product-engineer-node-js/">Node.js Engineers</a> to work on Ghost full-time</p>
 
 &nbsp;
 
